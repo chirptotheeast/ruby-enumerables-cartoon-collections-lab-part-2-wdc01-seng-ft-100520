@@ -29,8 +29,8 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   first_valid_call = nil
   
-  planeteer_calls.select do |string|
+  planeteer_calls.find do |string|
     string == valid_calls
-    first_valid_call = string.find
+    first_valid_call = string
   end
 end
