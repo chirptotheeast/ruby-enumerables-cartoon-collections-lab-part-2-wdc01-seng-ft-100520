@@ -31,6 +31,6 @@ def find_valid_calls(planeteer_calls)
   
   planeteer_calls.select do |string|
     string == valid_calls
-    first_valid_call = string.first
+    first_valid_call = string.find
   end
 end
