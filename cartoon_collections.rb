@@ -30,6 +30,6 @@ def find_valid_calls(planeteer_calls)
  
   
   planeteer_calls.find do |string|
-    planeteer_calls[string] == valid_calls
+    string == valid_calls
   end
 end
